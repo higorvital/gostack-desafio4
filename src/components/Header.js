@@ -5,7 +5,7 @@ import {HeaderDiv} from '../styles/header.js'
 function Header(){
     return (
         <HeaderDiv>
-            <FaFacebook color="#fff" size={20} className="facebook_logo"/>
+            <img src="https://i.imgur.com/KDIDiSE.png" />
             <div>
                 <a href="#">Meu Perfil</a>
                 <FaUserCircle color="#fff" size={20} className="user_circle"/>

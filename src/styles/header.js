@@ -10,11 +10,15 @@ export const HeaderDiv = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 64px;
 
     div {
         display: flex;
         justify-items: center;
+    }
+
+    img {
+        height: 24px;
     }
 
     a {
