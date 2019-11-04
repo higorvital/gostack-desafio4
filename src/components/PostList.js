@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Post from './Post'
+import {PostListDiv} from '../styles/postlist'
 
 class PostList extends Component{
     state = {
@@ -55,16 +56,13 @@ class PostList extends Component{
 
       render(){
           return (
-              <div id="post_list">
-                  <ul>
-                      {this.state.posts.map(post=> 
-                      <Post 
-                      key={post.id}
-                      post={post}
-                      />)}
-                  </ul>
-              </div>
-              
+            <PostListDiv>
+                {this.state.posts.map(post=> 
+                <Post 
+                key={post.id}
+                post={post}
+                />)}
+            </PostListDiv>          
           )
       }
 }

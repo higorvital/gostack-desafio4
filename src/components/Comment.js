@@ -1,13 +1,16 @@
 import React from 'react'
+import {CommentDiv} from '../styles/comment' 
 
 function Comment({comment}){
     return (
-        <div id="comment">
+        <CommentDiv>
             <img src={comment.author.avatar}/>
-            <p>
-                <span>{comment.author.name}</span> {comment.content}
-            </p>
-        </div>
+            <div>
+                <p>
+                    <span>{comment.author.name}</span> {comment.content}
+                </p>
+            </div>
+        </CommentDiv>
     )
 }
 
